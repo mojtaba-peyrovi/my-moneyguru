@@ -12,6 +12,11 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 })->name('home');
 Route::resource('/cars','CarController');
+//car insurance
+Route::get('/car-insurance','pagesController@getCarInsurance');
+Route::post('/filters','filtersController@filters');
+
+Route::get('/car-insurance/results','pagesController@getCarInsuranceResults')->name('ci-results');

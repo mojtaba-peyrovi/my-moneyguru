@@ -1,0 +1,49 @@
+body{
+  font-family: Helvetica,sans-serif,Arial;
+}
+
+/* top header */
+.top-header{
+  background-color:  #d7d8db;
+  font-size: 12px;
+}
+.top-heder span{
+  float: right;
+}
+#ci-logo{
+  width: 300px;
+  height: auto;
+}
+.phone-no{
+  font-size: 22px;
+  font-weight: 700;
+
+}
+#cs{
+  font-size: 12px;
+  text-transform: capitalize;
+  float: right;
+  margin-bottom: -10px;
+}
+#working-time{
+  font-size: 12px;
+  text-transform: capitalize;
+  float: right;
+}
+/*ci-menu */
+.ci-menu{
+  background-color: black;
+}
+.ci-menu ul{
+  list-style: none;
+  margin-left:-40px;
+}
+.ci-menu ul li{
+  display: inline-block;
+  color: white;
+}
+.ci-menu ul li a{
+  color: white;
+  font-size: 14px;
+  margin-right: 1.5rem;
+}

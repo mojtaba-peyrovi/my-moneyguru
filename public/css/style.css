@@ -1,7 +1,96 @@
-body {
-  padding-top: 5rem;
+body{
+  font-family: Helvetica,sans-serif,Arial;
 }
-.starter-template {
-  padding: 3rem 1.5rem;
-  text-align: center;
+
+:root {
+  --jumbotron-padding-y: 3rem;
+}
+
+.jumbotron {
+  padding-top: var(--jumbotron-padding-y);
+  padding-bottom: var(--jumbotron-padding-y);
+  margin-bottom: 0;
+  background-color: #fff;
+}
+@media (min-width: 768px) {
+  .jumbotron {
+    padding-top: calc(var(--jumbotron-padding-y) * 2);
+    padding-bottom: calc(var(--jumbotron-padding-y) * 2);
+  }
+}
+
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+
+.jumbotron-heading {
+  font-weight: 300;
+}
+
+.jumbotron .container {
+  max-width: 40rem;
+}
+
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+footer p {
+  margin-bottom: .25rem;
+}
+
+.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+/* navbar */
+#main-menu li a{
+  font-family: Helvetica,Arial;
+  font-size: 12px,
+  font-weight:600;
+}
+
+#main-menu li a:hover{
+  color: green;
+  transition: 0.2s ease-in;
+font-size: 12px,
+}
+
+.brand img{
+  width: 200px;
+  height: auto;
+}
+.lower-menu{
+  background-color: #d7d8db;
+}
+#social{
+  margin-top: -10px;
+}
+/* home header */
+#main-header{
+  background-image:url("/img/home-header.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 200px;
+
+}
+#btns a{
+  font-size: 16px;
+  text-transform: capitalize;
+  padding: 1rem 2rem;
+}
+#btns a i{
+  margin-right: 25px;
+}
+.partners-title{
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  font-weight: 600;
+  color: #175e6d
+}
+.partner-logos img{
+  width: 100px;
+  height: auto;
+}
+.partners{
+  background-color:	#d7d8db;
 }

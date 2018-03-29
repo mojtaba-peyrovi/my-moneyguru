@@ -1,23 +1,45 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark py-4">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-  <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+  <div class="collapse navbar-collapse justify-content-md-center" id="home-navbar">
     <div class="container">
-      <a class="navbar-brand" href="#"><img src="img/en-top-left-logo.svg" alt="" class="img-rounded center-block"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+          <div class="row">
+            <a class="brand" href="#"><img src="{{ url('img/en-top-left-logo.svg') }}"</a>
+            <div class="col-md-7 offset-md-1">
+              <ul class="navbar-nav" id="main-menu">
+                <li class="nav-item">
+                  <a class="nav-link text-uppercase" href="#">car insurance</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-uppercase" href="#">credit card</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-uppercase" href="#">personal loans</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-uppercase" href="#">blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-uppercase" href="#">help</a>
+                </li>
 
-      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="{{ url('/cars') }}">All Cars<span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{{ url('/cars/create') }}">New Car</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
-          </li>
-        </ul>
+              </ul>
+            </div>
+            <div class="text-white float-right nav-link">
+                CALL: 02-659-0033
+            </div>
+          </div>
       </div>
+  </div>
+</nav>
+<div class="lower-menu py-3">
+  <div class="container">
+    <div class="float-right" id="social">
+      <span>like: 2023</span>
+      <span>share</span>
+      <span>176</span> | TH
     </div>
-  </nav>
+  </div>
+</div>
